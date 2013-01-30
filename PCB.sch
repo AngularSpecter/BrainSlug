@@ -6686,30 +6686,30 @@ Source: http://www.osram.convergy.de/</description>
 </classes>
 <parts>
 <part name="IC2" library="maximIntegrated" deviceset="MAX13487E" device=""/>
-<part name="C6" library="adafruit" deviceset="C-US" device="C1206"/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="M1206"/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="M1206"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="M1206"/>
-<part name="C1" library="adafruit" deviceset="C-US" device="C1206"/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C1206"/>
-<part name="C3" library="adafruit" deviceset="C-US" device="C1206"/>
+<part name="C6" library="adafruit" deviceset="C-US" device="C1206" value=".1 uF"/>
+<part name="R1" library="adafruit" deviceset="R-US_" device="M1206" value="1440"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="M1206" value="120"/>
+<part name="R3" library="adafruit" deviceset="R-US_" device="M1206" value="1440"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
+<part name="C3" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C1206"/>
 <part name="IC3" library="TI" deviceset="LP2981A-50_DBV_5" device=""/>
-<part name="C9" library="adafruit" deviceset="C-US" device="C1206"/>
-<part name="C10" library="adafruit" deviceset="C-US" device="C1206"/>
+<part name="C9" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
+<part name="C10" library="adafruit" deviceset="C-US" device="C1206" value="2.2 uF"/>
 <part name="JP3" library="jumper" deviceset="JP4E" device=""/>
-<part name="R6" library="adafruit" deviceset="R-US_" device="M1206"/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="M1206"/>
+<part name="R6" library="adafruit" deviceset="R-US_" device="M1206" value="20k"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="M1206" value="10k"/>
 <part name="IC1" library="maximIntegrated" deviceset="MAX13448E" device=""/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R1206" value="120"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="R1206" value="120"/>
 <part name="C7" library="adafruit" deviceset="C-US" device="C1206"/>
 <part name="IC4" library="TI" deviceset="TXB0101" device=""/>
 <part name="IC5" library="TI" deviceset="TXB0101" device=""/>
 <part name="JP2" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="IC7" library="TI" deviceset="MAX232E_D_16" device="" value="MAX232E"/>
 <part name="JP4" library="jumper" deviceset="JP6Q" device=""/>
-<part name="R9" library="adafruit" deviceset="R-US_" device="M1206"/>
+<part name="R9" library="adafruit" deviceset="R-US_" device="M1206" value="20"/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="IC8" library="TI" deviceset="SN74LVC1G11_DBV_6" device=""/>
 <part name="JP5" library="jumper" deviceset="JP1E" device=""/>
@@ -6718,16 +6718,19 @@ Source: http://www.osram.convergy.de/</description>
 <part name="IC6" library="TI" deviceset="SN74LVC2G04_DBV_6" device=""/>
 <part name="TX" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
 <part name="RX" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R8" library="adafruit" deviceset="R-US_" device="M1206"/>
-<part name="R10" library="adafruit" deviceset="R-US_" device="M1206"/>
-<part name="R11" library="adafruit" deviceset="R-US_" device="M1206"/>
+<part name="R8" library="adafruit" deviceset="R-US_" device="M1206" value="200"/>
+<part name="R10" library="adafruit" deviceset="R-US_" device="M1206" value="200"/>
+<part name="R11" library="adafruit" deviceset="R-US_" device="M1206" value="200"/>
 <part name="POWER" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
 <part name="JP8" library="jumper" deviceset="JP2E" device=""/>
+<part name="C4" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <frame x1="-264.16" y1="12.7" x2="256.54" y2="302.26" columns="8" rows="5" layer="91"/>
+<text x="12.7" y="233.68" size="1.778" layer="97">20 Ohm Ic</text>
+<text x="20.32" y="180.34" size="1.778" layer="97">5 Ohm</text>
 </plain>
 <instances>
 <instance part="IC2" gate="G$1" x="22.86" y="195.58"/>
@@ -6737,7 +6740,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="R3" gate="G$1" x="73.66" y="203.2"/>
 <instance part="C1" gate="G$1" x="-22.86" y="157.48" rot="R90"/>
 <instance part="C2" gate="G$1" x="-22.86" y="147.32" rot="R90"/>
-<instance part="C3" gate="G$1" x="-38.1" y="154.94"/>
+<instance part="C3" gate="G$1" x="-35.56" y="162.56" rot="R180"/>
 <instance part="C5" gate="G$1" x="76.2" y="160.02"/>
 <instance part="IC3" gate="A" x="-180.34" y="251.46"/>
 <instance part="C9" gate="G$1" x="-190.5" y="251.46"/>
@@ -6765,9 +6768,10 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="RX" gate="G$1" x="78.74" y="78.74" rot="R90"/>
 <instance part="R8" gate="G$1" x="96.52" y="78.74" rot="R180"/>
 <instance part="R10" gate="G$1" x="96.52" y="93.98" rot="R180"/>
-<instance part="R11" gate="G$1" x="-149.86" y="223.52" rot="R180"/>
-<instance part="POWER" gate="G$1" x="-142.24" y="223.52" rot="R90"/>
+<instance part="R11" gate="G$1" x="-157.48" y="223.52" rot="R180"/>
+<instance part="POWER" gate="G$1" x="-139.7" y="223.52" rot="R90"/>
 <instance part="JP8" gate="1" x="-172.72" y="58.42" rot="R270"/>
+<instance part="C4" gate="G$1" x="-33.02" y="142.24" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6898,7 +6902,7 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-165.1" y1="215.9" x2="-182.88" y2="215.9" width="0.1524" layer="91"/>
 <label x="-182.88" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-154.94" y1="223.52" x2="-165.1" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="223.52" x2="-165.1" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="223.52" x2="-165.1" y2="215.9" width="0.1524" layer="91"/>
 <junction x="-165.1" y="215.9"/>
 </segment>
@@ -6965,6 +6969,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="73.66" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 <label x="73.66" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-35.56" y1="167.64" x2="-35.56" y2="175.26" width="0.1524" layer="91"/>
+<label x="-35.56" y="175.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -6996,8 +7005,7 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-129.54" y="215.9" size="1.27" layer="95"/>
 <pinref part="POWER" gate="G$1" pin="C"/>
 <wire x1="-134.62" y1="215.9" x2="-129.54" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="-137.16" y1="223.52" x2="-134.62" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="218.44" x2="-134.62" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="223.52" x2="-134.62" y2="215.9" width="0.1524" layer="91"/>
 <junction x="-134.62" y="215.9"/>
 </segment>
 <segment>
@@ -7083,6 +7091,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="JP8" gate="1" pin="1"/>
 <wire x1="-175.26" y1="60.96" x2="-180.34" y2="66.04" width="0.1524" layer="91"/>
 <label x="-180.34" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="142.24" x2="-48.26" y2="142.24" width="0.1524" layer="91"/>
+<label x="-48.26" y="142.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="+3V" class="0">
@@ -7280,16 +7293,14 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="IC7" gate="A" pin="VS-"/>
 <wire x1="-5.08" y1="144.78" x2="-10.16" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="144.78" x2="-12.7" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="142.24" x2="-30.48" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="142.24" x2="-38.1" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RS232_VS+" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="157.48" x2="-33.02" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="157.48" x2="-30.48" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="160.02" x2="-30.48" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="A" pin="VS+"/>
 <wire x1="-30.48" y1="154.94" x2="-5.08" y2="154.94" width="0.1524" layer="91"/>
 </segment>
@@ -7440,6 +7451,7 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="POWER" gate="G$1" pin="A"/>
+<wire x1="-152.4" y1="223.52" x2="-142.24" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RS232_RX_MIRROR" class="0">
