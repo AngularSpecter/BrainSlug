@@ -7284,9 +7284,9 @@ http://dangerousprototypes.com</description>
 <part name="L1" library="dp_devices" deviceset="FERRITE" device="-1206"/>
 <part name="R12" library="adafruit" deviceset="R-US_" device="R1206" value="27R"/>
 <part name="R13" library="adafruit" deviceset="R-US_" device="R1206" value="27R"/>
-<part name="C8" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
-<part name="C11" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
-<part name="C12" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
+<part name="C8" library="adafruit" deviceset="C-US" device="C1206" value="47pF"/>
+<part name="C11" library="adafruit" deviceset="C-US" device="C1206" value="47pF"/>
+<part name="C12" library="adafruit" deviceset="C-US" device="C1206" value=".01uF"/>
 <part name="C13" library="adafruit" deviceset="C-US" device="C1206" value=".1uF"/>
 <part name="U1" library="TI" deviceset="DCH010505S_EDJ_4" device=""/>
 <part name="U$1" library="TI" deviceset="TS5A3159-Q1" device=""/>
@@ -7319,6 +7319,12 @@ UART connection from FTDI chip and external BT module switched through analog sw
 Switch is normally set for BT mode.  Applying power via USB switches the IC to USB mode.</text>
 <text x="-226.06" y="66.04" size="1.778" layer="91">Logic Buffer to drive RX and TX LED's
 Buffer reduces load on line and isolates LED's from data bus</text>
+<text x="-218.44" y="190.5" size="1.778" layer="97">Jumper Wire</text>
+<wire x1="-226.06" y1="195.58" x2="-142.24" y2="195.58" width="0.1524" layer="97"/>
+<wire x1="-142.24" y1="195.58" x2="-142.24" y2="175.26" width="0.1524" layer="97"/>
+<wire x1="-142.24" y1="175.26" x2="-226.06" y2="175.26" width="0.1524" layer="97"/>
+<wire x1="-226.06" y1="175.26" x2="-226.06" y2="195.58" width="0.1524" layer="97"/>
+<rectangle x1="-202.946" y1="181.864" x2="-170.18" y2="183.896" layer="97"/>
 </plain>
 <instances>
 <instance part="IC2" gate="G$1" x="129.54" y="160.02"/>
@@ -8082,6 +8088,10 @@ Buffer reduces load on line and isolates LED's from data bus</text>
 <junction x="-99.06" y="218.44"/>
 <label x="-99.06" y="203.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-203.2" y1="182.88" x2="-205.74" y2="182.88" width="0.1524" layer="91"/>
+<label x="-205.74" y="182.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="USB_VCC" class="0">
 <segment>
@@ -8245,6 +8255,10 @@ Buffer reduces load on line and isolates LED's from data bus</text>
 <pinref part="JP4" gate="B" pin="5"/>
 <wire x1="144.78" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <label x="129.54" y="53.34" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="-170.18" y1="182.88" x2="-165.1" y2="182.88" width="0.1524" layer="91"/>
+<label x="-165.1" y="182.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_5V" class="0">
