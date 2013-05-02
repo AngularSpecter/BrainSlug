@@ -2,5 +2,5 @@ Version 1 Rev A
 -------------------------------------------------------------------------------------------
 1.  USB Ground needs to be jumpered to external ground
 2.  Caps on USB D+ and D- line need to be 47pF instead of .1 uF
-3.  Tranceivers outputting inverted logic.  Need to research and implement other glue logic
+3.  Pin 7 (enable) on U5 needs to be connected to USB_3V.  Bridge to Pin 6.
 4.  UART breakout for bluetooth module not level converted....is running at 5V
